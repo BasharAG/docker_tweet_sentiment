@@ -1,0 +1,16 @@
+elasticsearch:
+  image: deviantony/elk-elasticsearch
+  ports:
+    - "9200:9200"
+kibana:
+  image: deviantony/elk-kibana:kibana3
+  ports:
+    - "8080:80"
+  links:
+    - elasticsearch
+streaming:
+    build: streaming/.
+    volumes:
+      - streaming/.:/code
+    links:
+      - elasticsearch
