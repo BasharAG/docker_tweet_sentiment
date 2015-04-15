@@ -1,5 +1,5 @@
 # Twitter Sentiment Analysis using 
-###### Twitter Sentiment Analysis using  Docker, ElasticSearch and Kabana
+Twitter Sentiment Analysis using  Docker, ElasticSearch and Kabana
 
 ## Docker setup 
 
@@ -16,7 +16,7 @@ brew cask install virtualbox
 brew cask install vagrant
 ```
 
-### Install boot2docker https://docs.docker.com/installation/mac/
+Install boot2docker https://docs.docker.com/installation/mac/
 
 ```
 vim ~/.bashrc
@@ -48,7 +48,7 @@ sudo pip install -U docker-compose
 git clone https://github.com/SWDeGennaro/docker_tweet_sentiment.git
 cd docker_tweet_sentiment
 ```
-###### Add your credentials for your twitter api dev account to a file called config.py that looks like the config.sample.py
+Add your credentials for your twitter api dev account to a file called config.py that looks like the config.sample.py
 ```
 consumer_key = "Your_consumer_key_here"
 consumer_secret = "Your_consumer_secret_here"
@@ -99,3 +99,4 @@ curl -XGET $(boot2docker ip):9200/sentiment/_search?q=sentiment=negative
 ```
 ##### NOTE: You can also view the same example in the browser
 ### Kibana
+TODO 
